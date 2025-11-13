@@ -1,0 +1,4 @@
+def funkcja():
+    
+    
+    return "HelloWorld"
