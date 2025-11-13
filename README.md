@@ -1,1 +1,2 @@
-# LNU-Project
+# Projekt Herkules
+Projekt na konkurs LNU
