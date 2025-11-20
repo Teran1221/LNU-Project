@@ -1,16 +1,32 @@
 from kod_uzytkownika import funkcja
 
+komunikat = "Coś poszło nie tak..."
+
 def sukces():
-    print("Sukces")
+    global komunikat
+    komunikat += "\n Sukces"
+    return True
 
 def porazka():
-    print("Porazka")
+    global komunikat
+    komunikat += "\n Porażka"
+    return False
 
 def weryfikator():
+    global komunikat
     kod_uzytkownika = funkcja()
-    if kod_uzytkownika == "Hello World":
-        sukces()
-    else:
-        porazka()
+    WYNIK = "Hello World"
+    komunikat = "kod użytkownika: \"" + funkcja() + "\", oczekawana wartość: \"" + WYNIK + "\""
+    try:
+            if kod_uzytkownika == WYNIK:
+                sukces()
+            else:
+                porazka()
+    except:
+        return False
+
+def print_komunikat():
+    print(komunikat)
 
 weryfikator()
+print_komunikat()
