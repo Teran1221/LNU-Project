@@ -1,0 +1,12 @@
+dystans.py
+    widoczny: TAK
+    do edycji: TAK
+weryfikator.py
+    widoczny: NIE
+    do edycji: NIE
+
+
+output: NIE
+testy: TAK
+    liczba_testów: 5
+    min_zaliczonych: 5
